@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-     <!-- --------------- Google Fonts  ------------------->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-     <link rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/fontawesome.min.css">
-     <link href="https://use.fontawesome.com/release/v5.0.7/css/all.css" rel="stylesheet">
-     <link href="https://fontawesome.com/" rel="stylesheet">
-     <script src="https://kit.fontawesome.com/d898ba3c97.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800
+    <!-- --------------- Google Fonts  ------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/fontawesome.min.css">
+    <link href="https://use.fontawesome.com/release/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="https://fontawesome.com/" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d898ba3c97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800
           ;0,900;1,100;1,200;1,500;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,700;1,800&family=Roboto:ital,w
           ght@0,100;0,300;0,400;0,700;1,100;1,400;1,500;1,900&display=swap" rel="stylesheet">
- 
-     <!------------------ Boxicons Links  -------------->
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!------------------ Boxicons Links  -------------->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Microverse Recipes: WebPage</title>
 </head>
+
 <body>
     <!-- -------- start of Nav ------- -->
-    <nav>
-        <div class="container nav__container">
-            <a href="index.html"><img src="./nested_img/NEW.jpg" class="border-rds"></a>
-            <ul class="nav__menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">My Channel</a></li>
-                <li><a href="#">Trending</a></li>
-                <li><a href="#">Subscriptions</a></li>
-                <li><a href="#">History</a></li>
-            </ul>
-            <button id="open-menu-btn"><i class="fas fa-bars"></i></button>
-            <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+    <nav class="flex-div">
+       <div class="nav-left">
+        <div class="nav__menu">
+            <a href="#"><i class='bx bx-menu'></i></a>
+            <a href="#"> <img src="images/microverse.png"></i></a>
+           
         </div>
+        
+       </div>
+       <div class="nav-middle"></div>
+       <div class="nav-right">
+        <ul class="nav__menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Subscription</a></li>
+        </ul>
+       </div>
     </nav>
 
-    <!-- -------- Start of Video -------->
+    <!-- -------- Start of Sidebar -------->
 
-    <section class="container">
-        <video src="" class="video-container">
-
-        </video>
-    </section>
-
-    <!-- ----------Start of Side Bar -------->
-
-    <scetion class="side-bar-container">
-        <div class="sidebar">
-
+   <div class="sidebar">
+        <div class="shortcut-links">
+            <a href="#"><img src="images/home.png">Home</a>
+            <a href="#"><img src="images/explore.png">Explore</a>
+            <a href="#"><img src="images/subscriprion.png">subscription</a>
+            <a href="#"><img src="images/library.png">Library</a>
+            <a href="#"><img src="images/history.png">History</a>
+            <a href="#"><img src="images/playlist.png">Playlist</a>
         </div>
-    </scetion>
+      
+   </div>
+    
 
 </body>
+
 </html>

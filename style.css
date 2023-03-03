@@ -25,39 +25,43 @@
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
-    --color-light:rgba(255, 255, 255, 0.6);
+    --color-light: rgba(255, 255, 255, 0.6);
 
 
-    --container-width-lg: 80%; 
-    --container-width-md: 90%; 
-    --container-width-sm: 94%; 
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
 
     --transition: all 400ms ease;
 
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.7; 
+    line-height: 1.7;
     color: var(--color-white);
-    background-color: var(--color-bg);
+    background-color: var(--color-white);
 }
 
-.container{
+.container {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
 
-section{
+section {
     padding: 6rem 0;
 }
 
-section h2{
+section h2 {
     text-align: center;
     margin-bottom: 4rem;
 }
 
-h1, h2, h3, h4, h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     line-height: 1.2;
 }
 
@@ -69,7 +73,7 @@ h2 {
     font-size: 2rem;
 }
 
-h3{
+h3 {
     font-size: 1.6rem;
 }
 
@@ -77,77 +81,35 @@ h4 {
     font-size: 1.3rem;
 }
 
-a {
-    color: var(--color-white);
+a { 
+    color: var(--color-black);
 }
 
 img {
-    width: 140px;
+    width: 50px;
     display: block;
     object-fit: cover;
 }
 
-.header__right-image img{
-    width: 100%;
+.flex-div{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 }
 
-.border-rds{
-    border-radius: 20px;
-}
-
-.btn{
-    display: inline-block;
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: 1rem 2rem;
-    border: 1px solid transparent;
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.btn:hover{
-    background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
-}
-
-.btn-primary{
-    background: var(--color-danger);
-    color: var(--color-white);
-}
-
-/* ======================== Start of Nav-bar ====================== */
 nav{
-    background: transparent;
-    width: 100vw;
-    height: 5rem;
-    position: fixed;
+    padding: 10px 2%;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: sticky;
     top: 0;
-    z-index: 11;
+    z-index: 10;
 }
 
-.nav__container{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav button{
-    display: none;
-}
-
-.nav__menu {
+.nav__menu{
     display: flex;
     align-items: center;
-    gap: 4rem; 
-}
-
-.nav__menu a {
-    font-size: 0.9rem;
-    transition: var(--transition);
-}
-
-.nav__menu a:hover {
-    color: var(--color-bg2);
+    gap: 4rem;
 }
